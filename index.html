@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pavel Jaroš - Portfolio</title>
+    <meta name="description" content="Profesionální realitní služby, design interiérů, rekonstrukce a správa nemovitostí v Praze">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        .description {
+            font-size: 1rem;
+            color: #777;
+            margin-bottom: 50px;
+            line-height: 1.6;
+        }
+
+        .links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .link-card {
+            display: block;
+            padding: 30px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .link-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .link-card-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .link-card-desc {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #eee;
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 40px 25px;
+            }
+
+            .links {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pavel Jaroš</h1>
+        <p class="subtitle">Portfolio</p>
+        <p class="description">
+            Vítejte na mém portfoliu. Nabízím komplexní služby v oblasti nemovitostí,
+            designu interiérů, rekonstrukcí a správy majetku v Praze a okolí.
+        </p>
+
+        <div class="links">
+            <a href="https://emperorkundis.github.io/pavel-jaros-design/" class="link-card">
+                <div class="link-card-title">🎨 Design</div>
+                <div class="link-card-desc">Interiérový design a vizualizace</div>
+            </a>
+
+            <a href="https://emperorkundis.github.io/pavel-jaros-reality/" class="link-card">
+                <div class="link-card-title">🏠 Reality</div>
+                <div class="link-card-desc">Prodej a pronájem nemovitostí</div>
+            </a>
+
+            <a href="https://emperorkundis.github.io/pavel-jaros-rekonstrukce/" class="link-card">
+                <div class="link-card-title">🔨 Rekonstrukce</div>
+                <div class="link-card-desc">Komplexní rekonstrukce objektů</div>
+            </a>
+
+            <a href="https://emperorkundis.github.io/pavel-jaros-sprava/" class="link-card">
+                <div class="link-card-title">🔑 Správa</div>
+                <div class="link-card-desc">Správa nemovitostí</div>
+            </a>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Pavel Jaroš. Všechna práva vyhrazena.</p>
+        </footer>
+    </div>
+</body>
+</html>
