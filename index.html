@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PJ Group - Pavel Jaroš | Od návrhu po prodej</title>
-    <meta name="description" content="Navrhujeme interiéry, realizujeme rekonstrukce, postaráme se o nájemníky, prodej i pronájem. Komplexní služby na jednom místě.">
+    <title>PJ Group - Pavel Jaroš | Od návrhu po prodej... jeden tým, jasná odpovědnost</title>
+    <meta name="description" content="Navrhujeme interiéry, realizujeme rekonstrukce, postaráme se o nájemníky, prodej i pronájem. Vše na jednom místě.">
     <meta name="keywords" content="Pavel Jaroš, PJ Group, design interiérů, rekonstrukce, správa nemovitostí, realitní služby, Praha">
 
     <!-- Open Graph -->
@@ -24,61 +24,40 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: #f5f5f5;
+            background: #F5F5F5;
         }
 
+        /* Hero Section */
         .hero {
-            min-height: 100vh;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            position: relative;
-            overflow: hidden;
+            min-height: 60vh;
+            background: linear-gradient(135deg, rgba(229, 57, 53, 0.9), rgba(196, 30, 58, 0.9)), url('images/hero-design.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 2rem;
+            padding: 4rem 2rem;
+            position: relative;
         }
 
-        .particles {
+        .hero::before {
+            content: '';
             position: absolute;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.2);
             z-index: 1;
         }
 
-        .particle {
-            position: absolute;
-            width: 10px;
-            height: 10px;
-            background: rgba(255, 255, 255, 0.5);
-            border-radius: 50%;
-            animation: float 15s infinite ease-in-out;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0) translateX(0); opacity: 0; }
-            10% { opacity: 1; }
-            90% { opacity: 1; }
-            100% { transform: translateY(-100vh) translateX(100px); opacity: 0; }
-        }
-
-        .particle:nth-child(1) { left: 10%; animation-delay: 0s; animation-duration: 12s; }
-        .particle:nth-child(2) { left: 20%; animation-delay: 2s; animation-duration: 14s; }
-        .particle:nth-child(3) { left: 30%; animation-delay: 4s; animation-duration: 16s; }
-        .particle:nth-child(4) { left: 40%; animation-delay: 6s; animation-duration: 13s; }
-        .particle:nth-child(5) { left: 50%; animation-delay: 1s; animation-duration: 15s; }
-        .particle:nth-child(6) { left: 60%; animation-delay: 3s; animation-duration: 17s; }
-        .particle:nth-child(7) { left: 70%; animation-delay: 5s; animation-duration: 11s; }
-        .particle:nth-child(8) { left: 80%; animation-delay: 7s; animation-duration: 14s; }
-
         .hero-content {
             position: relative;
-            z-index: 10;
-            max-width: 1200px;
+            z-index: 2;
+            max-width: 900px;
         }
 
         .logo {
@@ -86,192 +65,178 @@
         }
 
         .logo img {
-            max-width: 300px;
+            max-width: 350px;
             height: auto;
-            filter: drop-shadow(0 10px 30px rgba(0,0,0,0.3));
+            filter: drop-shadow(0 10px 30px rgba(0,0,0,0.5));
         }
 
         h1 {
-            font-size: 3.5rem;
+            font-size: 3rem;
             font-weight: 700;
             color: white;
             margin-bottom: 1rem;
-            text-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            text-shadow: 0 3px 10px rgba(0,0,0,0.5);
         }
 
         .subtitle {
-            font-size: 1.5rem;
-            color: rgba(255,255,255,0.95);
-            margin-bottom: 3rem;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            font-size: 1.3rem;
+            color: white;
+            margin-bottom: 2rem;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+            max-width: 800px;
+        }
+
+        /* Services Grid */
+        .services-section {
+            background: white;
+            padding: 5rem 2rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 4rem;
+            color: #333;
         }
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            padding: 4rem 2rem;
-            max-width: 1400px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            max-width: 1200px;
             margin: 0 auto;
         }
 
         .service-card {
             background: white;
-            border-radius: 20px;
+            border-radius: 15px;
             padding: 2.5rem;
             text-align: center;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .service-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 5px;
-            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
-            transform: scaleX(0);
-            transition: transform 0.4s ease;
-        }
-
-        .service-card:hover::before {
-            transform: scaleX(1);
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            border-top: 4px solid #E53935;
         }
 
         .service-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+            box-shadow: 0 15px 40px rgba(229, 57, 53, 0.2);
         }
 
-        .service-icon {
-            width: 120px;
-            height: 120px;
-            margin: 0 auto 1.5rem;
-            border-radius: 50%;
-            overflow: hidden;
-            border: 5px solid #f5f5f5;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-        }
-
-        .service-icon img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        .service-emoji {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
         }
 
         .service-card h3 {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             color: #333;
             margin-bottom: 0.5rem;
         }
 
-        .service-card .emoji {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
         .service-card h4 {
-            font-size: 1.2rem;
-            color: #667eea;
-            margin-bottom: 1rem;
-            font-weight: 600;
+            font-size: 1.1rem;
+            color: #757575;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
         }
 
         .service-card p {
             color: #666;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
             line-height: 1.8;
         }
 
         .cta-button {
             display: inline-block;
-            padding: 1rem 2.5rem;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 0.9rem 2.5rem;
+            background: #E53935;
             color: white;
             text-decoration: none;
             border-radius: 50px;
             font-weight: 600;
             transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 4px 15px rgba(229, 57, 53, 0.3);
         }
 
         .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+            background: #C41E3A;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(196, 30, 58, 0.4);
         }
 
+        /* Why PJ Group Section */
         .benefits {
-            background: white;
-            padding: 4rem 2rem;
-            text-align: center;
-        }
-
-        .benefits h2 {
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
-            color: #333;
+            background: #F5F5F5;
+            padding: 5rem 2rem;
         }
 
         .benefits-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
+            gap: 2.5rem;
             max-width: 1200px;
-            margin: 0 auto;
+            margin: 2rem auto 0;
         }
 
         .benefit-item {
             padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
         }
 
         .benefit-item h3 {
             font-size: 1.3rem;
-            color: #667eea;
-            margin-bottom: 0.5rem;
+            color: #E53935;
+            margin-bottom: 0.8rem;
         }
 
         .benefit-item p {
             color: #666;
+            line-height: 1.6;
         }
 
+        /* Contact Section */
         .contact {
-            background: #0f172a;
+            background: #333;
             color: white;
-            padding: 4rem 2rem;
+            padding: 5rem 2rem;
             text-align: center;
         }
 
         .contact h2 {
             font-size: 2.5rem;
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
         }
 
         .contact-info {
-            max-width: 600px;
-            margin: 0 auto 2rem;
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            display: grid;
+            gap: 1.5rem;
         }
 
         .contact-item {
-            margin: 1rem 0;
-            font-size: 1.2rem;
+            font-size: 1.15rem;
+        }
+
+        .contact-item strong {
+            color: #E53935;
+            margin-right: 0.5rem;
         }
 
         .contact-item a {
-            color: #667eea;
+            color: #fff;
             text-decoration: none;
             transition: color 0.3s ease;
         }
 
         .contact-item a:hover {
-            color: #764ba2;
+            color: #E53935;
         }
 
         .social-links {
-            margin: 2rem 0;
+            margin: 3rem 0;
         }
 
         .social-links a {
@@ -280,111 +245,116 @@
             color: white;
             text-decoration: none;
             font-size: 1.1rem;
+            padding: 0.5rem 1.5rem;
+            border: 2px solid #E53935;
+            border-radius: 25px;
             transition: all 0.3s ease;
         }
 
         .social-links a:hover {
-            color: #667eea;
+            background: #E53935;
             transform: translateY(-3px);
         }
 
+        /* Footer */
         footer {
-            background: #0a0f1f;
-            color: rgba(255,255,255,0.6);
+            background: #1a1a1a;
+            color: rgba(255,255,255,0.7);
             text-align: center;
             padding: 2rem;
             font-size: 0.9rem;
         }
 
+        /* Responsive Design */
         @media (max-width: 768px) {
             h1 {
-                font-size: 2.5rem;
+                font-size: 2rem;
             }
 
             .subtitle {
-                font-size: 1.2rem;
+                font-size: 1.1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
             }
 
             .services-grid {
                 grid-template-columns: 1fr;
-                padding: 2rem 1rem;
+                gap: 2rem;
             }
 
             .logo img {
-                max-width: 200px;
+                max-width: 250px;
+            }
+
+            .service-card {
+                padding: 2rem 1.5rem;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
 <body>
+    <!-- Hero Section -->
     <div class="hero">
-        <div class="particles">
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-        </div>
         <div class="hero-content">
             <div class="logo">
                 <img src="images/PJ_Group_logo.svg" alt="PJ Group Logo">
             </div>
-            <h1>Od návrhu po prodej</h1>
-            <p class="subtitle">Jeden tým, jasná odpovědnost. Komplexní řešení pro vaši nemovitost.</p>
+            <h1>Od návrhu po prodej... jeden tým, jasná odpovědnost.</h1>
+            <p class="subtitle">Navrhujeme interiéry, realizujeme rekonstrukce, postaráme se o nájemníky, prodej i pronájem.</p>
         </div>
     </div>
 
-    <div class="services-grid">
-        <div class="service-card">
-            <div class="emoji">🎨</div>
-            <div class="service-icon">
-                <img src="images/pavel-design.png" alt="Pavel Jaroš Design">
+    <!-- Services Section -->
+    <div class="services-section">
+        <h2 class="section-title">Vše na jednom místě</h2>
+        <div class="services-grid">
+            <!-- Design -->
+            <div class="service-card">
+                <div class="service-emoji">🎨</div>
+                <h3>Interiér na míru</h3>
+                <h4>Od konceptu po realizaci</h4>
+                <p>Vytvoříme vám interiér přesně podle vašich představ. Kompletní návrhy, 3D vizualizace a realizace na klíč.</p>
+                <a href="https://emperorkundis.github.io/pavel-jaros-design/cs" class="cta-button">Přejdi na web →</a>
             </div>
-            <h3>Interiér na míru</h3>
-            <h4>Od konceptu po realizaci</h4>
-            <p>Vytvoříme vám interiér přesně podle vašich představ. Kompletní návrhy, 3D vizualizace a realizace na klíč.</p>
-            <a href="https://emperorkundis.github.io/pavel-jaros-design/cs" class="cta-button">Přejít na web →</a>
-        </div>
 
-        <div class="service-card">
-            <div class="emoji">🔨</div>
-            <div class="service-icon">
-                <img src="images/pavel-rekonstrukce.png" alt="Pavel Jaroš Rekonstrukce">
+            <!-- Rekonstrukce -->
+            <div class="service-card">
+                <div class="service-emoji">🔨</div>
+                <h3>Pevný rozpočet, jistý výsledek</h3>
+                <h4>Byty i domy na klíč</h4>
+                <p>Rekonstrukce s garantovanou cenou a termínem dokončení. Transparentní proces bez nepříjemných překvapení.</p>
+                <a href="https://emperorkundis.github.io/pavel-jaros-rekonstrukce/cs" class="cta-button">Přejdi na web →</a>
             </div>
-            <h3>Pevný rozpočet, jistý výsledek</h3>
-            <h4>Byty i domy na klíč</h4>
-            <p>Rekonstrukce s garantovanou cenou a termínem dokončení. Transparentní proces bez nepříjemných překvapení.</p>
-            <a href="https://emperorkundis.github.io/pavel-jaros-rekonstrukce/cs" class="cta-button">Přejít na web →</a>
-        </div>
 
-        <div class="service-card">
-            <div class="emoji">🔑</div>
-            <div class="service-icon">
-                <img src="images/pavel-sprava.png" alt="Pavel Jaroš Správa">
+            <!-- Správa -->
+            <div class="service-card">
+                <div class="service-emoji">🔑</div>
+                <h3>Příjem bez starostí</h3>
+                <h4>Možnost garantovaného nájemného</h4>
+                <p>Kompletní správa vašich nemovitostí. Zajistíme nájemníky, údržbu i pravidelné příjmy.</p>
+                <a href="https://emperorkundis.github.io/pavel-jaros-sprava/cs" class="cta-button">Přejdi na web →</a>
             </div>
-            <h3>Příjem bez starostí</h3>
-            <h4>Možnost garantovaného nájemného</h4>
-            <p>Kompletní správa vašich nemovitostí. Zajistíme nájemníky, údržbu i pravidelné příjmy.</p>
-            <a href="https://emperorkundis.github.io/pavel-jaros-sprava/cs" class="cta-button">Přejít na web →</a>
-        </div>
 
-        <div class="service-card">
-            <div class="emoji">🏠</div>
-            <div class="service-icon">
-                <img src="images/pavel-reality.png" alt="Pavel Jaroš Reality">
+            <!-- Reality -->
+            <div class="service-card">
+                <div class="service-emoji">🏠</div>
+                <h3>Prodej i pronájem se ziskem</h3>
+                <h4>Profesionální prezentace</h4>
+                <p>Maximalizujeme hodnotu vaší nemovitosti. Home staging, profesionální fotografie a efektivní marketing.</p>
+                <a href="https://emperorkundis.github.io/pavel-jaros-reality/cs" class="cta-button">Přejdi na web →</a>
             </div>
-            <h3>Prodej i pronájem se ziskem</h3>
-            <h4>Profesionální prezentace</h4>
-            <p>Maximalizujeme hodnotu vaší nemovitosti. Home staging, profesionální fotografie a efektivní marketing.</p>
-            <a href="https://emperorkundis.github.io/pavel-jaros-reality/cs" class="cta-button">Přejít na web →</a>
         </div>
     </div>
 
+    <!-- Benefits Section -->
     <div class="benefits">
-        <h2>Proč PJ Group?</h2>
+        <h2 class="section-title">Proč PJ Group?</h2>
         <div class="benefits-grid">
             <div class="benefit-item">
                 <h3>✓ Jeden tým</h3>
@@ -405,17 +375,18 @@
         </div>
     </div>
 
+    <!-- Contact Section -->
     <div class="contact">
         <h2>Zůstaňme ve spojení</h2>
         <div class="contact-info">
             <div class="contact-item">
-                📍 <strong>Adresa:</strong> Kaprova 52/6, Praha 1
+                <strong>📍 Adresa:</strong> Kaprova 52/6, Praha 1
             </div>
             <div class="contact-item">
-                📞 <strong>Telefon:</strong> <a href="tel:+420777558730">+420 777 558 730</a>
+                <strong>📞 Telefon:</strong> <a href="tel:+420777558730">+420 777 558 730</a>
             </div>
             <div class="contact-item">
-                ✉️ <strong>E-mail:</strong> <a href="mailto:pavel.jaros@kwcz.cz">pavel.jaros@kwcz.cz</a>
+                <strong>✉️ E-mail:</strong> <a href="mailto:pavel.jaros@kwcz.cz">pavel.jaros@kwcz.cz</a>
             </div>
         </div>
         <div class="social-links">
@@ -426,6 +397,7 @@
         <a href="mailto:pavel.jaros@kwcz.cz" class="cta-button" style="margin-top: 2rem;">Kontaktujte mě</a>
     </div>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 PJ Group - Pavel Jaroš REKO s.r.o. | Všechna práva vyhrazena</p>
     </footer>
