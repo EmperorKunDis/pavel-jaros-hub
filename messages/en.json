@@ -1,0 +1,63 @@
+{
+  "meta": {
+    "title": "PJ Group — Everything for your living under one roof",
+    "description": "Real estate services, interior design, renovations and property management in the Karlovy Vary region. Pavel Jaroš and his team of professionals."
+  },
+  "cookie": {
+    "message": "This website uses cookies to improve your experience.",
+    "accept": "Accept all",
+    "reject": "Reject",
+    "preferences": "Preferences"
+  },
+  "nav": {
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Everything for your living",
+    "titleAccent": "under one roof.",
+    "subtitle": "Real estate services, interior design, renovations and property management in the Karlovy Vary region."
+  },
+  "divisions": {
+    "reality": {
+      "title": "PJ Reality",
+      "subtitle": "Real Estate",
+      "description": "Sales, rentals and real estate investments. Exclusive property listings in the Karlovy Vary region."
+    },
+    "reko": {
+      "title": "PJ Rekonstrukce",
+      "subtitle": "Construction & Renovation",
+      "description": "Complete renovations and construction modifications. From project to final approval."
+    },
+    "design": {
+      "title": "PJ Design",
+      "subtitle": "Interior Design",
+      "description": "Interior design with emphasis on functionality and aesthetics. From concept to turnkey execution."
+    },
+    "sprava": {
+      "title": "PJ Správa",
+      "subtitle": "Property Management",
+      "description": "Complete care for your properties. Rental management, maintenance and service."
+    }
+  },
+  "about": {
+    "title": "About PJ Group",
+    "text1": "PJ Group is a group of companies by Pavel Jaroš, offering a complete spectrum of real estate services under one roof — from sales and rentals, through interior design and renovations, to property management and maintenance.",
+    "text2": "We operate primarily in the Karlovy Vary region, where we have deep knowledge of the local market and years of experience. Our goal is to provide professional services at the highest level with a personal approach to every client.",
+    "text3": "Thanks to the interconnection of all four divisions, we can offer clients synergy they won't find elsewhere — buy a property, have it designed, renovated and subsequently managed, all under one roof."
+  },
+  "contact": {
+    "title": "Contact",
+    "name": "Pavel Jaroš",
+    "role": "Founder of PJ Group",
+    "phone": "+420 777 558 730",
+    "email": "pavel.jaros@kwcz.cz",
+    "region": "Karlovy Vary Region",
+    "cta": "Get in touch"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "cookies": "Cookie Settings"
+  }
+}

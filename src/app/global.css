@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Dark monochromatický theme pro PJ Group Hub */
+    --background: 240 6% 4%;
+    --foreground: 0 0% 98%;
+    --card: 240 4% 10%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 4% 10%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 6% 4%;
+    --secondary: 240 4% 16%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 4% 16%;
+    --muted-foreground: 240 5% 65%;
+    --accent: 45 97% 54%;
+    --accent-foreground: 240 6% 4%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 4% 16%;
+    --input: 240 4% 16%;
+    --ring: 45 97% 54%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
+
+/* Skip navigation for accessibility */
+.skip-nav {
+  @apply absolute -top-full left-4 z-[100] bg-accent text-accent-foreground px-4 py-2 rounded-md font-medium;
+  @apply focus:top-4 transition-all;
+}
+
+/* Gold accent hover glow */
+.gold-glow {
+  box-shadow: 0 0 0 0 hsla(45, 97%, 54%, 0);
+  transition: box-shadow 0.5s ease;
+}
+
+.gold-glow:hover {
+  box-shadow: 0 0 30px 0 hsla(45, 97%, 54%, 0.15);
+}
+
+/* Smooth image reveal */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "meta": {
+    "title": "PJ Group — Všetko pre vaše bývanie pod jednou strechou",
+    "description": "Realitné služby, interiérový dizajn, rekonštrukcie a správa nehnuteľností v Karlovarskom kraji. Pavel Jaroš a jeho tím profesionálov."
+  },
+  "cookie": {
+    "message": "Táto stránka používa cookies na zlepšenie vášho zážitku.",
+    "accept": "Prijať všetko",
+    "reject": "Odmietnuť",
+    "preferences": "Nastavenia"
+  },
+  "nav": {
+    "about": "O nás",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Všetko pre vaše bývanie",
+    "titleAccent": "pod jednou strechou.",
+    "subtitle": "Realitné služby, interiérový dizajn, rekonštrukcie a správa nehnuteľností v Karlovarskom kraji."
+  },
+  "divisions": {
+    "reality": {
+      "title": "PJ Reality",
+      "subtitle": "Realitné služby",
+      "description": "Predaj, prenájom a investície do nehnuteľností. Exkluzívna ponuka nehnuteľností v Karlovarskom kraji."
+    },
+    "reko": {
+      "title": "PJ Rekonstrukce",
+      "subtitle": "Stavby a rekonštrukcie",
+      "description": "Kompletné rekonštrukcie a stavebné úpravy. Realizácia od projektu po kolaudáciu."
+    },
+    "design": {
+      "title": "PJ Design",
+      "subtitle": "Interiérový dizajn",
+      "description": "Návrhy interiérov s dôrazom na funkčnosť a estetiku. Od konceptu po realizáciu na kľúč."
+    },
+    "sprava": {
+      "title": "PJ Správa",
+      "subtitle": "Správa nehnuteľností",
+      "description": "Kompletná starostlivosť o vaše nehnuteľnosti. Správa prenájmov, údržba a servis."
+    }
+  },
+  "about": {
+    "title": "O PJ Group",
+    "text1": "PJ Group je skupina firiem Pavla Jaroša, ktorá pod jednou strechou ponúka kompletné spektrum služieb v oblasti nehnuteľností — od predaja a prenájmu, cez návrh interiérov a rekonštrukcie, až po správu a údržbu.",
+    "text2": "Pôsobíme prevažne v Karlovarskom kraji, kde máme hlbokú znalosť miestneho trhu a dlhoročné skúsenosti. Naším cieľom je poskytovať profesionálne služby na najvyššej úrovni s osobným prístupom ku každému klientovi.",
+    "text3": "Vďaka prepojeniu všetkých štyroch divízií dokážeme klientom ponúknuť synergiu, ktorú inde nenájdu — kúpite nehnuteľnosť, necháte ju navrhnúť, zrekonštruovať a následne spravovať, všetko pod jednou strechou."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "name": "Pavel Jaroš",
+    "role": "Zakladateľ PJ Group",
+    "phone": "+420 777 558 730",
+    "email": "pavel.jaros@kwcz.cz",
+    "region": "Karlovarský kraj",
+    "cta": "Napíšte nám"
+  },
+  "footer": {
+    "rights": "Všetky práva vyhradené.",
+    "privacy": "Zásady ochrany osobných údajov",
+    "cookies": "Nastavenia cookies"
+  }
+}

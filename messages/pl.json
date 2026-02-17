@@ -1,0 +1,63 @@
+{
+  "meta": {
+    "title": "PJ Group — Wszystko dla Twojego mieszkania pod jednym dachem",
+    "description": "Usługi nieruchomościowe, projektowanie wnętrz, remonty i zarządzanie nieruchomościami w regionie Karlowych Warów. Pavel Jaroš i jego zespół profesjonalistów."
+  },
+  "cookie": {
+    "message": "Ta strona używa plików cookie, aby poprawić komfort użytkowania.",
+    "accept": "Zaakceptuj wszystko",
+    "reject": "Odrzuć",
+    "preferences": "Ustawienia"
+  },
+  "nav": {
+    "about": "O nas",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Wszystko dla Twojego mieszkania",
+    "titleAccent": "pod jednym dachem.",
+    "subtitle": "Usługi nieruchomościowe, projektowanie wnętrz, remonty i zarządzanie nieruchomościami w regionie Karlowych Warów."
+  },
+  "divisions": {
+    "reality": {
+      "title": "PJ Reality",
+      "subtitle": "Nieruchomości",
+      "description": "Sprzedaż, wynajem i inwestycje w nieruchomości. Ekskluzywne oferty nieruchomości w regionie Karlowych Warów."
+    },
+    "reko": {
+      "title": "PJ Rekonstrukce",
+      "subtitle": "Budowa i remonty",
+      "description": "Kompleksowe remonty i przebudowy. Od projektu po odbiór końcowy."
+    },
+    "design": {
+      "title": "PJ Design",
+      "subtitle": "Projektowanie wnętrz",
+      "description": "Projektowanie wnętrz z naciskiem na funkcjonalność i estetykę. Od koncepcji po realizację pod klucz."
+    },
+    "sprava": {
+      "title": "PJ Správa",
+      "subtitle": "Zarządzanie nieruchomościami",
+      "description": "Kompleksowa opieka nad nieruchomościami. Zarządzanie wynajmem, konserwacja i serwis."
+    }
+  },
+  "about": {
+    "title": "O PJ Group",
+    "text1": "PJ Group to grupa firm Pavla Jaroša, oferująca pod jednym dachem pełne spektrum usług w zakresie nieruchomości — od sprzedaży i wynajmu, przez projektowanie wnętrz i remonty, po zarządzanie i konserwację nieruchomości.",
+    "text2": "Działamy głównie w regionie Karlowych Warów, gdzie mamy dogłębną znajomość lokalnego rynku i wieloletnie doświadczenie. Naszym celem jest świadczenie profesjonalnych usług na najwyższym poziomie z indywidualnym podejściem do każdego klienta.",
+    "text3": "Dzięki połączeniu wszystkich czterech działów możemy zaoferować klientom synergię, której nie znajdą gdzie indziej — kupić nieruchomość, zlecić jej zaprojektowanie, wyremontowanie i następnie zarządzanie, wszystko pod jednym dachem."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "name": "Pavel Jaroš",
+    "role": "Założyciel PJ Group",
+    "phone": "+420 777 558 730",
+    "email": "pavel.jaros@kwcz.cz",
+    "region": "Region Karlowych Warów",
+    "cta": "Skontaktuj się z nami"
+  },
+  "footer": {
+    "rights": "Wszelkie prawa zastrzeżone.",
+    "privacy": "Polityka prywatności",
+    "cookies": "Ustawienia plików cookie"
+  }
+}
